@@ -49,7 +49,7 @@ export function ReservationForm() {
             Name
           </label>
           <input id="name" name="name" className={fieldClass} placeholder="Ihr Name" />
-          {errors.name && <p className="mt-1 text-xs text-destructive">{errors.name}</p>}
+          {errors['name'] && <p className="mt-1 text-xs text-destructive">{errors['name']}</p>}
         </div>
         <div>
           <label htmlFor="email" className="mb-1.5 block text-xs tracking-widest uppercase">
@@ -62,14 +62,14 @@ export function ReservationForm() {
             className={fieldClass}
             placeholder="name@beispiel.de"
           />
-          {errors.email && <p className="mt-1 text-xs text-destructive">{errors.email}</p>}
+          {errors['email'] && <p className="mt-1 text-xs text-destructive">{errors['email']}</p>}
         </div>
         <div>
           <label htmlFor="phone" className="mb-1.5 block text-xs tracking-widest uppercase">
             Telefon
           </label>
           <input id="phone" name="phone" className={fieldClass} placeholder="05722 000000" />
-          {errors.phone && <p className="mt-1 text-xs text-destructive">{errors.phone}</p>}
+          {errors['phone'] && <p className="mt-1 text-xs text-destructive">{errors['phone']}</p>}
         </div>
         <div>
           <label htmlFor="guests" className="mb-1.5 block text-xs tracking-widest uppercase">
@@ -83,7 +83,7 @@ export function ReservationForm() {
             defaultValue={2}
             className={fieldClass}
           />
-          {errors.guests && <p className="mt-1 text-xs text-destructive">{errors.guests}</p>}
+          {errors['guests'] && <p className="mt-1 text-xs text-destructive">{errors['guests']}</p>}
         </div>
       </div>
 
@@ -92,7 +92,7 @@ export function ReservationForm() {
           Datum &amp; Uhrzeit
         </label>
         <input id="datetime" name="datetime" type="datetime-local" className={fieldClass} />
-        {errors.datetime && <p className="mt-1 text-xs text-destructive">{errors.datetime}</p>}
+        {errors['datetime'] && <p className="mt-1 text-xs text-destructive">{errors['datetime']}</p>}
       </div>
 
       <div>
