@@ -337,7 +337,7 @@ function Index() {
               <Reveal
                 key={i}
                 delay={(i % 3) * 100}
-                className={`group overflow-hidden ${i === 0 || i === 5 ? "md:row-span-2" : ""}`}
+                className={`group overflow-hidden ${i === 0 ? "md:row-span-2" : ""}`}
               >
                 <img
                   src={g.src}
@@ -346,7 +346,7 @@ function Index() {
                   width={1024}
                   height={1024}
                   className={`w-full object-cover transition-transform duration-700 group-hover:scale-110 ${
-                    i === 0 || i === 5 ? "h-64 md:h-[544px]" : "h-64"
+                    i === 0 ? "h-64 md:h-[544px]" : "h-64"
                   }`}
                 />
               </Reveal>
